@@ -4,8 +4,9 @@ import numpy as np
 
 
 def pairwise_distances(X, distance_fn):
+    """Pairwise distance calculation with an arbitrary distance function."""
     n = len(X)
-    D = np.empty((n, n), dtype=np.float)
+    D = np.empty((n, n), dtype=float)
 
     for i, x in enumerate(X):
         for j, y in enumerate(X):
@@ -15,6 +16,18 @@ def pairwise_distances(X, distance_fn):
 
 
 def _means(X):
+    """Calculate matrix-based means.
+
+    Parameters
+    ----------
+    X : np.array of shape (n, n)
+        Input matrix
+
+    Return
+    ------
+    Vector of row means, vector of column means, and overall matrix
+    mean.
+    """
     row_mean = np.mean(X, axis=1, keepdims=True)
     col_mean = np.mean(X, axis=0, keepdims=True)
     mean = np.mean(X)
