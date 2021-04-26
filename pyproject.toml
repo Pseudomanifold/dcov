@@ -6,8 +6,8 @@ authors = ["Bastian Rieck <bastian.rieck@bsse.ethz.ch>"]
 license = "BSD-3-Clause"
 
 [tool.poetry.dependencies]
-python = ">=3.6"
-numpy = "^1.19.1"
+python = ">=3.7.1"
+numpy = "^1.20.2"
 
 [tool.poetry.dev-dependencies]
 
