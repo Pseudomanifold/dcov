@@ -2,7 +2,7 @@
 name = "dcov"
 version = "0.1.0"
 description = "A package for calculating the sample distance covariance"
-authors = ["Bastian Rieck <bastian.rieck@bsse.ethz.ch>"]
+authors = ["Bastian Rieck <bastian@rieck.me>"]
 license = "BSD-3-Clause"
 
 [tool.poetry.dependencies]
