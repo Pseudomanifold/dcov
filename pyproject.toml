@@ -7,7 +7,7 @@ license = "BSD-3-Clause"
 
 [tool.poetry.dependencies]
 python = ">=3.7.1"
-numpy = "^1.20.2"
+numpy = ">=1.20.2"
 
 [tool.poetry.dev-dependencies]
 
